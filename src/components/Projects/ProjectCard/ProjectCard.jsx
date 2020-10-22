@@ -36,15 +36,16 @@ export default function ProjectCard() {
                             })}
                         </div>
                         <div className="rectangle"></div>
-                        <a href={item.link} rel="noopener noreferrer" target="_blank">
                        
                         <div className="img-container">
                             <div className="img-container-cover">
-                                <p>Coming soon <p>&</p> Made with LOVE</p>
+                                <p>Coming soon<p>
+                                <p>&</p>
+                                </p> Made with LOVE</p>
+                                <a className="card-link" href={item.link} rel="noopener noreferrer" target="_blank">Open</a>
                             </div>
                             <img alt="img" src={item.preview}></img>
                         </div>
-                    </a>
                 </div>
             )
         })

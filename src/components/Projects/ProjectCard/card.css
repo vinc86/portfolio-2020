@@ -15,7 +15,7 @@
     overflow: hidden;
     border-radius: 13px;
 }
-.img-container:hover .img-container-cover{
+.img-container:hover .img-container-cover, .img-container:active .img-container-cover{
     transform: scale(1);
 }
 .img-container-cover{
@@ -25,11 +25,19 @@
     position: absolute;
     top:0px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: scale(0);
     transition: all 0.4s ease;
     border-radius: 13px;
+}
+.card-link{
+    background: #e0e0e0;
+    font-weight: 700;
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 img{
     width: 100%;
