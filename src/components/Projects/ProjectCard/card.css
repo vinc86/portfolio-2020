@@ -1,0 +1,133 @@
+#projects{
+    margin-top:160px;
+}
+.project-card{
+    position: relative;
+    margin: 60px 0px;
+    padding: 0px 30px;
+}
+
+.img-container{
+    position: relative;
+    width:250px;
+    max-width: 450px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 13px;
+}
+.img-container:hover .img-container-cover{
+    transform: scale(1);
+}
+.img-container-cover{
+    width: 100%;
+    height: 100%;
+    background: #09172cf8;
+    position: absolute;
+    top:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    border-radius: 13px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.img-container-cover p{
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+.project-card:nth-child(odd){
+    align-self: flex-start;
+}
+.project-card:nth-child(odd)>.project-name{
+   right: -20px;
+}
+.project-card:nth-child(odd)>.rectangle{
+   right: -10px;
+   top: -30px;
+}
+.project-card:nth-child(even){
+    align-self: flex-end;
+}
+.project-card:nth-child(even)>.project-name{
+    left: -20px;
+}
+.project-card:nth-child(even)>.rectangle{
+    left: -10px;
+    top: -30px;
+ }
+.project-name{
+    position: absolute;
+    top: -20px;
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    font-weight: 500;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+.rectangle{
+    position: absolute;
+    width: 211.54px;
+    height: 239px;
+    background: rgba(9, 23, 44, 0.6);
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width: 768px){
+    .projects{
+        margin-top: 150px;
+    }
+}
+
+
+@media screen and (min-width: 900px){
+    .projects{
+        flex-flow: row wrap;
+        margin-top: unset;
+    }
+    .project-card{
+        position: relative;
+        margin: unset;
+        padding: 0;
+        margin: 30px;
+    }
+
+    .img-container{
+        
+        position: relative;
+        width:450px;
+        height: 300px;
+        border-radius: 13px;
+    }
+    .img-container>img{
+        width: 100%;
+        height: 100%;
+    }
+    .project-card:nth-child(odd){
+        align-self: unset;
+    }
+    .project-card:nth-child(even){
+        align-self: unset;
+    }
+    .project-card>.rectangle{
+        width: 105%;
+        height: 90%;
+    }
+
+    .project-name{
+        flex-direction: row;
+        position: initial;
+        padding-bottom: 20px;
+        left: unset;
+        right: unset;
+        justify-content: center;
+        z-index: 1000;
+        color: #fff;
+    }
+}

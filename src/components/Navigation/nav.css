@@ -2,15 +2,134 @@
     display: flex;
     width: 100%;
     height: 50px;
-    position: fixed;
+    position: relative;
     bottom: 0%;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
-ul{
+.menu-list{
     background: #09172c;
+    position: fixed;
+    transform: translateY(100%);
+    opacity: 0;
     color: #E0E0E0;
+    top:0px;
+    left: 0px;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    transition: all 0.4s ease-in;
+}
+.show{
+    transform: translateY(0%);
+    z-index: 1000;
+    opacity: 1;
+}
+.social-media-section,.link-section{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+.social-media-section{
+    align-items: flex-end;
+}
+.social-icon{
+    width: 60px;
+    height: 60px;
+    background: #E0E0E0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111;
+    font-size: 2rem;
+}
+.menu-button-section{
+    position: fixed;
+    width:100%;
+    background: #122149;
+    padding: 5px;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 40px ;
+    border-top-right-radius: 40px;
+    z-index: 1100;
+}
+.menu-button{
+    border:none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #09172c;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.rotate{
+    transform: rotate(90deg);
 }
 .fa-ellipsis-v{
-    color: #E0E0E0;
+    color: #E0E0E0; 
+}
+
+.link-section>li{
+    border-bottom: 1px solid #192A56;
+    padding-bottom: 15px;
+}
+.link-section>li>a{
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 900px){
+    .navigation{
+       position: unset;
+       z-index: 1000;
+    }
+    .menu-button-section{
+        display: none;
+    }
+    .menu-list{
+        background: #09172c;
+        position: fixed;
+        transform: unset;
+        opacity: 1;
+        color: #E0E0E0;
+        top:0px;
+        left: 0px;
+        padding: 10px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-between;
+        transition: all 0.4s ease-in;
+    }
+    .social-media-section,.link-section{
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: c;
+        align-items: center;
+    }
+    .link-section{
+        width: 800px;
+    }
+
+    .link-section>li{
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+    .social-media-section{
+        width: 400px;
+        height: 100%;
+
+    }
+
 }
