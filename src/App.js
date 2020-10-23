@@ -1,5 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import About from './components/About/About';
+import Contacts from './components/Contacts/Contacts';
 import ContextContainer from './components/ContextContainer';
 import Main from './components/Main/Main';
 import Navigation from './components/Navigation/Navigation';
@@ -13,8 +15,8 @@ function App() {
         <Navigation />
           <Main/>
           <Projects/>
-        {/* <Route path="/" component={}/>
-        <Route path="/" component={}/> */}
+          <About />
+          <Contacts />
         </div>
       </ContextContainer>
     </Router>

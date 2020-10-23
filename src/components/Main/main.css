@@ -9,7 +9,7 @@
     bottom: 100px;
 }
 .name-container{
-    height: 60%;
+    height: 10%;
 }
 .first-name{
     font-weight: 200;
@@ -24,12 +24,17 @@
     color: #DDD9D9;
 }
 .welcome{
-    height: 30%;
+    height: 270px;
     font-size: 1.3rem;
-    width: 50%;
+    width: 97%;
     color: #E0e0e0;
     position: relative;
+    top: 50px;
     left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 .top{
     position: absolute;
@@ -54,7 +59,7 @@
     height: 120px;
     display: flex;
     position: relative;
-    bottom: 50px;
+    bottom: 90px;
     margin-top: 50px;
     right: 20px;
     flex-direction: column;
