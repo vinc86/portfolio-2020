@@ -17,13 +17,13 @@ export default function Navigation() {
            <ul className={className}>
                <div className="social-media-section">
                     <div className="social-icon">
-                        <a href="https://github.com/vinc86" rel="noopener noreferrer" target="_blank"><i className="fab fa-github"></i></a>
+                        <a href="https://github.com/vinc86" rel="noopener noreferrer" target="_blank"><i className="fa-brands fa-github"></i></a>
                     </div>
                     <div className="social-icon">
-                        <a href="https://www.linkedin.com/in/vincenzo-mancuso-47829072/" rel="noopener noreferrer" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/vincenzo-mancuso-47829072/" rel="noopener noreferrer" target="_blank"><i className="fa-brands fa-linkedin-in"></i></a>
                     </div>
                     <div className="social-icon">
-                        <a href="https://www.xing.com/profile/Vincenzo_Mancuso8/cv" rel="noopener noreferrer" target="_blank"><i className="fab fa-xing"></i></a>
+                        <a href="https://www.xing.com/profile/Vincenzo_Mancuso8/cv" rel="noopener noreferrer" target="_blank"><i className="fa-brands fa-xing"></i></a>
                     </div>
                </div>
                <div className="link-section">
