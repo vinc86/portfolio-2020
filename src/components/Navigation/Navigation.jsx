@@ -42,7 +42,7 @@ export default function Navigation() {
                </div>
            </ul>
            <div className="menu-button-section">
-                <button onClick={()=>openMenu()} className={buttonClass}><i className="fas fa-ellipsis-v fa-2x"></i></button>
+                <button onClick={()=>openMenu()} className={buttonClass}><i className="fa-solid fa-ellipsis fa-2x"></i></button>
            </div>
        </nav>
     )
